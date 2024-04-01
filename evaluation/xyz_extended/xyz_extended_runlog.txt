@@ -1,0 +1,871 @@
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:13:01.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:13:01.log
+Parsing complete in 74.828269 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 12.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 4.304809 seconds! 21 of the 441 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 10
+noise_radius: 1
+number of parsed templates: 10
+number of parsed variables: 12
+number of prepared variables: 21
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  2.000643      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.999894      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.499830      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.499778      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 2.0006434973683542
+adjusted: 0.09125296084935286
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:14:28.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:14:28.log
+Parsing complete in 77.437259 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 12.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 4.493418 seconds! 21 of the 441 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 10
+noise_radius: 10
+number of parsed templates: 10
+number of parsed variables: 12
+number of prepared variables: 21
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  2.014766      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.991745      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.495062      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.491164      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 2.0147655863343257
+adjusted: 0.20511767517894697
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:15:59.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:15:59.log
+Parsing complete in 76.868406 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 12.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 4.462169 seconds! 21 of the 441 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 10
+noise_radius: 100
+number of parsed templates: 10
+number of parsed variables: 12
+number of prepared variables: 21
+         Candidate Candidate Tag           Target  ...        P-value  Candidate->Target Edge Status Target->Candidate Edge Status
+0  de74037b_4+mean        z mean  caa5dc5d_4+mean  ...   0.000000e+00                      Undecided                     Undecided
+1  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  ...  8.869480e-296                      Undecided                     Undecided
+
+[2 rows x 7 columns]
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target  ...        P-value  Candidate->Target Edge Status Target->Candidate Edge Status
+0  de74037b_4+mean        z mean  d1a33a13_4+mean  ...   0.000000e+00                      Undecided                     Undecided
+1  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  ...  8.869480e-296                      Undecided                     Undecided
+
+[2 rows x 7 columns]
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.5414247994329928
+adjusted: 0.03150535054783887
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:17:29.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:17:29.log
+Parsing complete in 145.284776 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 102.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 35.624494 seconds! 201 of the 40401 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 100
+noise_radius: 1
+number of parsed templates: 100
+number of parsed variables: 102
+number of prepared variables: 201
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  1.999913      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.999823      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.499919      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.499848      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.9999126020633793
+adjusted: 0.04273110400446001
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:20:40.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:20:40.log
+Parsing complete in 146.701019 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 102.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 34.699768 seconds! 201 of the 40401 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 100
+noise_radius: 10
+number of parsed templates: 100
+number of parsed variables: 102
+number of prepared variables: 201
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  1.995647      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.991531      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.490080      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.487814      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.9956469508896857
+adjusted: 0.043946302165011275
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:23:51.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:23:51.log
+Parsing complete in 146.264349 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 102.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 34.775361 seconds! 201 of the 40401 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 100
+noise_radius: 100
+number of parsed templates: 100
+number of parsed variables: 102
+number of prepared variables: 201
+                  Candidate            Candidate Tag  ... Candidate->Target Edge Status  Target->Candidate Edge Status
+0            timestamp+mean           timestamp mean  ...                     Undecided                      Undecided
+1           de74037b_4+mean                   z mean  ...                     Undecided                      Undecided
+2           84300f1e_4+mean               var_6 mean  ...                     Undecided                      Undecided
+3           efc91945_4+mean              var_48 mean  ...                     Undecided                      Undecided
+4           412bd3a3_4+mean              var_73 mean  ...                     Undecided                      Undecided
+5           a072850c_4+mean              var_64 mean  ...                     Undecided                      Undecided
+6           0114048a_4+mean              var_85 mean  ...                     Undecided                      Undecided
+7           fc884741_4+mean              var_29 mean  ...                     Undecided                      Undecided
+8           6d83e0b2_4+mean              var_57 mean  ...                     Undecided                      Undecided
+9           16224f94_4+mean              var_33 mean  ...                     Undecided                      Undecided
+10          92ca6105_4+mean              var_19 mean  ...                     Undecided                      Undecided
+11          30349da0_4+mean              var_60 mean  ...                     Undecided                      Undecided
+12          d806b3d2_4+mean              var_96 mean  ...                     Undecided                      Undecided
+13          59b61188_4+mean              var_26 mean  ...                     Undecided                      Undecided
+14          17f123f5_4+mean              var_24 mean  ...                     Undecided                      Undecided
+15          a84c0114_4+mean              var_40 mean  ...                     Undecided                      Undecided
+16          da1bffe9_4+mean              var_20 mean  ...                     Undecided                      Undecided
+17          137f4230_4+mean               var_1 mean  ...                     Undecided                      Undecided
+18          24a876bf_4+mean              var_59 mean  ...                     Undecided                      Undecided
+19          3f7ecabf_4+mean              var_71 mean  ...                     Undecided                      Undecided
+20          173d44ff_4+mean              var_89 mean  ...                     Undecided                      Undecided
+21          c29c6cc3_4+mean              var_42 mean  ...                     Undecided                      Undecided
+22          5b3a1235_4+mean              var_72 mean  ...                     Undecided                      Undecided
+23          f61c0497_4+mean              var_14 mean  ...                     Undecided                      Undecided
+24          ae1ae339_4+mean              var_82 mean  ...                     Undecided                      Undecided
+25          8264bf56_4+mean              var_88 mean  ...                     Undecided                      Undecided
+26          c1fcb6f8_4+mean              var_41 mean  ...                     Undecided                      Undecided
+27          bad9b738_4+mean              var_70 mean  ...                     Undecided                      Undecided
+28          e05b6ac6_4+mean              var_66 mean  ...                     Undecided                      Undecided
+29          ac417a23_4+mean              var_27 mean  ...                     Undecided                      Undecided
+30          31b5a8ea_4+mean               var_3 mean  ...                     Undecided                      Undecided
+31          b22e0642_4+mean              var_38 mean  ...                     Undecided                      Undecided
+32          215b4081_4+mean              var_44 mean  ...                     Undecided                      Undecided
+33          5f6f1f7f_4+mean               var_2 mean  ...                     Undecided                      Undecided
+34          979d782f_4+mean              var_67 mean  ...                     Undecided                      Undecided
+35          a9e94c1a_4+mean              var_75 mean  ...                     Undecided                      Undecided
+36          d59d24b8_4+mean              var_56 mean  ...                     Undecided                      Undecided
+37          1f4ef213_4+mean              var_61 mean  ...                     Undecided                      Undecided
+38          19ad6f5d_4+mean              var_92 mean  ...                     Undecided                      Undecided
+39          b15cfb61_4+mean              var_36 mean  ...                     Undecided                      Undecided
+40          800a1ce7_4+mean              var_25 mean  ...                     Undecided                      Undecided
+41          530dfd6c_4+mean              var_84 mean  ...                     Undecided                      Undecided
+42          0a10d15d_4+mean              var_12 mean  ...                     Undecided                      Undecided
+43          c694cf53_4+mean              var_15 mean  ...                     Undecided                      Undecided
+44          a42873ce_4+mean              var_10 mean  ...                     Undecided                      Undecided
+45  TemplateId=0114048a+sum  TemplateId 0114048a sum  ...                     Undecided                      Undecided
+46          ae74b91e_4+mean               var_7 mean  ...                     Undecided                      Undecided
+
+[47 rows x 7 columns]
+next exploration: timestamp+mean
+                  Candidate            Candidate Tag  ... Candidate->Target Edge Status  Target->Candidate Edge Status
+0           de74037b_4+mean                   z mean  ...                     Undecided                      Undecided
+1           c694cf53_4+mean              var_15 mean  ...                     Undecided                      Undecided
+2           34dff4ab_4+mean              var_52 mean  ...                     Undecided                      Undecided
+3           30349da0_4+mean              var_60 mean  ...                     Undecided                      Undecided
+4           a9e94c1a_4+mean              var_75 mean  ...                     Undecided                      Undecided
+5           93259594_4+mean              var_63 mean  ...                     Undecided                      Undecided
+6           5a8d4137_4+mean              var_87 mean  ...                     Undecided                      Undecided
+7           857dc518_4+mean              var_16 mean  ...                     Undecided                      Undecided
+8           9cdd4cae_4+mean              var_77 mean  ...                     Undecided                      Undecided
+9           3550e403_4+mean              var_54 mean  ...                     Undecided                      Undecided
+10          a4f89551_4+mean              var_53 mean  ...                     Undecided                      Undecided
+11          b15cfb61_4+mean              var_36 mean  ...                     Undecided                      Undecided
+12          9a3914f5_4+mean              var_97 mean  ...                     Undecided                      Undecided
+13          3df11b87_4+mean              var_83 mean  ...                     Undecided                      Undecided
+14          57ebbffe_4+mean              var_32 mean  ...                     Undecided                      Undecided
+15          0e81c436_4+mean              var_65 mean  ...                     Undecided                      Undecided
+16          17e1a857_4+mean              var_68 mean  ...                     Undecided                      Undecided
+17          354fc545_4+mean              var_22 mean  ...                     Undecided                      Undecided
+18          8264bf56_4+mean              var_88 mean  ...                     Undecided                      Undecided
+19          3f7ecabf_4+mean              var_71 mean  ...                     Undecided                      Undecided
+20          2d2d3673_4+mean              var_35 mean  ...                     Undecided                      Undecided
+21          16224f94_4+mean              var_33 mean  ...                     Undecided                      Undecided
+22          6f6b72f6_4+mean              var_81 mean  ...                     Undecided                      Undecided
+23          e05b6ac6_4+mean              var_66 mean  ...                     Undecided                      Undecided
+24  TemplateId=0a10d15d+sum  TemplateId 0a10d15d sum  ...                     Undecided                      Undecided
+25          5f6f1f7f_4+mean               var_2 mean  ...                     Undecided                      Undecided
+26          800a1ce7_4+mean              var_25 mean  ...                     Undecided                      Undecided
+27          de5e7e83_4+mean              var_31 mean  ...                     Undecided                      Undecided
+28          4181c9e1_4+mean              var_37 mean  ...                     Undecided                      Undecided
+29          3ffb1965_4+mean               var_9 mean  ...                     Undecided                      Undecided
+30          ba17a8af_4+mean              var_46 mean  ...                     Undecided                      Undecided
+31          205520b0_4+mean              var_74 mean  ...                     Undecided                      Undecided
+32          caf1ed6d_4+mean               var_5 mean  ...                     Undecided                      Undecided
+33          59b61188_4+mean              var_26 mean  ...                     Undecided                      Undecided
+34          fc884741_4+mean              var_29 mean  ...                     Undecided                      Undecided
+35          979d782f_4+mean              var_67 mean  ...                     Undecided                      Undecided
+36          8dca130a_4+mean              var_69 mean  ...                     Undecided                      Undecided
+37          0a73ac5f_4+mean              var_86 mean  ...                     Undecided                      Undecided
+38          1f5a65d5_4+mean              var_95 mean  ...                     Undecided                      Undecided
+39          ec9ebeae_4+mean              var_58 mean  ...                     Undecided                      Undecided
+40          62c8a2a1_4+mean              var_13 mean  ...                     Undecided                      Undecided
+41          cd153117_4+mean              var_11 mean  ...                     Undecided                      Undecided
+42          412bd3a3_4+mean              var_73 mean  ...                     Undecided                      Undecided
+43          19ad6f5d_4+mean              var_92 mean  ...                     Undecided                      Undecided
+44          bad9b738_4+mean              var_70 mean  ...                     Undecided                      Undecided
+45          24a876bf_4+mean              var_59 mean  ...                     Undecided                      Undecided
+46          6d83e0b2_4+mean              var_57 mean  ...                     Undecided                      Undecided
+47          a42873ce_4+mean              var_10 mean  ...                     Undecided                      Undecided
+48          3ba8db79_4+mean              var_34 mean  ...                     Undecided                      Undecided
+49          d59d24b8_4+mean              var_56 mean  ...                     Undecided                      Undecided
+50          530dfd6c_4+mean              var_84 mean  ...                     Undecided                      Undecided
+
+[51 rows x 7 columns]
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 0.4990380593838637
+adjusted: -0.02707322526607925
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:27:02.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:27:02.log
+Parsing complete in 855.347636 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 1002.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 335.740386 seconds! 2001 of the 4004001 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 1000
+noise_radius: 1
+number of parsed templates: 1000
+number of parsed variables: 1002
+number of prepared variables: 2001
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  1.994315      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.999196      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.500367      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.500183      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.9943151587394428
+adjusted: -0.030422095618966694
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:47:11.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:47:11.log
+Parsing complete in 873.559723 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 1002.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 337.225582 seconds! 2001 of the 4004001 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 1000
+noise_radius: 10
+number of parsed templates: 1000
+number of parsed variables: 1002
+number of prepared variables: 2001
+          Candidate Candidate Tag           Target     Slope   P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0   de74037b_4+mean        z mean  caa5dc5d_4+mean  0.984834  0.000000                     Undecided                     Undecided
+1   079926c0_4+mean  var_738 mean  caa5dc5d_4+mean -0.095172  0.002500                     Undecided                     Undecided
+2   3a83887a_4+mean  var_731 mean  caa5dc5d_4+mean  0.071713  0.023068                     Undecided                     Undecided
+3   4181c9e1_4+mean   var_37 mean  caa5dc5d_4+mean -0.069981  0.025124                     Undecided                     Undecided
+4   e56d7af7_4+mean  var_235 mean  caa5dc5d_4+mean  0.063032  0.042559                     Undecided                     Undecided
+..              ...           ...              ...       ...       ...                           ...                           ...
+67  c3d216a4_4+mean  var_490 mean  caa5dc5d_4+mean  0.003748  0.905868                     Undecided                     Undecided
+68  857dc518_4+mean   var_16 mean  caa5dc5d_4+mean  0.002666  0.934336                     Undecided                     Undecided
+69  8ca5c584_4+mean  var_129 mean  caa5dc5d_4+mean  0.002496  0.938764                     Undecided                     Undecided
+70  4a400d82_4+mean  var_843 mean  caa5dc5d_4+mean -0.000368  0.990844                     Undecided                     Undecided
+71  92ca6105_4+mean   var_19 mean  caa5dc5d_4+mean -0.000197  0.994944                     Undecided                     Undecided
+
+[72 rows x 7 columns]
+next exploration: timestamp+mean
+          Candidate Candidate Tag           Target     Slope   P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0   de74037b_4+mean        z mean  d1a33a13_4+mean  0.492308  0.000000                     Undecided                     Undecided
+1   afc49434_4+mean  var_303 mean  d1a33a13_4+mean -0.046328  0.005242                     Undecided                     Undecided
+2   81974902_4+mean  var_337 mean  d1a33a13_4+mean -0.041843  0.012078                     Undecided                     Undecided
+3   05ab8a2e_4+mean  var_275 mean  d1a33a13_4+mean  0.040755  0.015378                     Undecided                     Undecided
+4   8f85b38d_4+mean  var_146 mean  d1a33a13_4+mean -0.040903  0.016694                     Undecided                     Undecided
+..              ...           ...              ...       ...       ...                           ...                           ...
+68  bb61fe0d_4+mean  var_158 mean  d1a33a13_4+mean  0.001424  0.933414                     Undecided                     Undecided
+69  33f64977_4+mean  var_316 mean  d1a33a13_4+mean  0.001193  0.944176                     Undecided                     Undecided
+70  dbb7749f_4+mean  var_833 mean  d1a33a13_4+mean -0.000373  0.982190                     Undecided                     Undecided
+71  e9d40a8e_4+mean  var_899 mean  d1a33a13_4+mean  0.000304  0.985521                     Undecided                     Undecided
+72  fa35ef78_4+mean  var_421 mean  d1a33a13_4+mean  0.000248  0.988172                     Undecided                     Undecided
+
+[73 rows x 7 columns]
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.728871091035681
+adjusted: -0.024599844811646676
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_14:07:43.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing file: ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_14:07:43.log
+Parsing complete in 862.881916 seconds!
+Causal unit set to machine (tag: machine) 
+Determining the causal unit assignment...
+Adding template occurrence count variables...
+Dropped 0 uninteresting columns, out of an original total of 1002.
+Calculating aggregates for each causal unit...
+Dropping aggregates that do not add information...
+Successfully prepared the log with causal unit machine (tag: machine)
+Preparation complete in 366.305653 seconds! 2001 of the 4004001 possible edges were auto-rejected.
+----------------------------------------
+num_total_variables: 1000
+noise_radius: 100
+number of parsed templates: 1000
+number of parsed variables: 1002
+number of prepared variables: 2001
+           Candidate   Candidate Tag           Target  ...        P-value  Candidate->Target Edge Status Target->Candidate Edge Status
+0     timestamp+mean  timestamp mean  caa5dc5d_4+mean  ...  7.055736e-203                      Undecided                     Undecided
+1    de74037b_4+mean          z mean  caa5dc5d_4+mean  ...   2.027101e-39                      Undecided                     Undecided
+2    54254699_4+mean    var_452 mean  caa5dc5d_4+mean  ...   7.984482e-04                      Undecided                     Undecided
+3    fa35ef78_4+mean    var_421 mean  caa5dc5d_4+mean  ...   1.029170e-03                      Undecided                     Undecided
+4    a3b53f43_4+mean    var_994 mean  caa5dc5d_4+mean  ...   2.477159e-03                      Undecided                     Undecided
+..               ...             ...              ...  ...            ...                            ...                           ...
+625  3289fc19_4+mean    var_818 mean  caa5dc5d_4+mean  ...   9.893031e-01                      Undecided                     Undecided
+626  7134e874_4+mean    var_432 mean  caa5dc5d_4+mean  ...   9.898507e-01                      Undecided                     Undecided
+627  17dcc388_4+mean    var_478 mean  caa5dc5d_4+mean  ...   9.908057e-01                      Undecided                     Undecided
+628  bb662430_4+mean    var_400 mean  caa5dc5d_4+mean  ...   9.942370e-01                      Undecided                     Undecided
+629  128d67f3_4+mean    var_243 mean  caa5dc5d_4+mean  ...   9.976386e-01                      Undecided                     Undecided
+
+[630 rows x 7 columns]
+next exploration: timestamp+mean
+           Candidate   Candidate Tag           Target  ...        P-value  Candidate->Target Edge Status Target->Candidate Edge Status
+0     timestamp+mean  timestamp mean  d1a33a13_4+mean  ...  3.683565e-153                      Undecided                     Undecided
+1    de74037b_4+mean          z mean  d1a33a13_4+mean  ...   1.694649e-07                      Undecided                     Undecided
+2    a4c7e902_4+mean    var_675 mean  d1a33a13_4+mean  ...   4.660162e-04                      Undecided                     Undecided
+3    9c9c16f9_4+mean    var_674 mean  d1a33a13_4+mean  ...   1.804054e-03                      Undecided                     Undecided
+4    5c0f5d7a_4+mean    var_799 mean  d1a33a13_4+mean  ...   2.335199e-03                      Undecided                     Undecided
+..               ...             ...              ...  ...            ...                            ...                           ...
+610  cbd9137d_4+mean    var_111 mean  d1a33a13_4+mean  ...   9.842873e-01                      Undecided                     Undecided
+611  620c512e_4+mean    var_595 mean  d1a33a13_4+mean  ...   9.917802e-01                      Undecided                     Undecided
+612  3ffb1965_4+mean      var_9 mean  d1a33a13_4+mean  ...   9.930073e-01                      Undecided                     Undecided
+613  ad9bbb55_4+mean    var_276 mean  d1a33a13_4+mean  ...   9.943210e-01                      Undecided                     Undecided
+614  e0b2ea2e_4+mean    var_874 mean  d1a33a13_4+mean  ...   9.999504e-01                      Undecided                     Undecided
+
+[615 rows x 7 columns]
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 0.07118156011483734
+adjusted: -0.0003003592283405965
+
+===================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+===================================
+
+
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_14:07:43.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 3.739618 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.020842 seconds! 2001 of the 4004001 possible edges were auto-rejected.
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_14:07:43.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 4.152711 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.025334 seconds! 2001 of the 4004001 possible edges were auto-rejected.
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_14:07:43.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 3.677325 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.023501 seconds! 2001 of the 4004001 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 1000
+number of parsed variables: 1002
+number of prepared variables: 2001
+           Candidate   Candidate Tag           Target         Slope        P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0     timestamp+mean  timestamp mean  caa5dc5d_4+mean  3.019428e-08  7.055736e-203                     Undecided                     Undecided
+1    de74037b_4+mean          z mean  caa5dc5d_4+mean  5.630078e-01   2.027101e-39                     Undecided                     Undecided
+2    54254699_4+mean    var_452 mean  caa5dc5d_4+mean -1.512540e-01   7.984482e-04                     Undecided                     Undecided
+3    fa35ef78_4+mean    var_421 mean  caa5dc5d_4+mean -1.489735e-01   1.029170e-03                     Undecided                     Undecided
+4    a3b53f43_4+mean    var_994 mean  caa5dc5d_4+mean  1.385733e-01   2.477159e-03                     Undecided                     Undecided
+..               ...             ...              ...           ...            ...                           ...                           ...
+625  3289fc19_4+mean    var_818 mean  caa5dc5d_4+mean -6.224353e-04   9.893031e-01                     Undecided                     Undecided
+626  7134e874_4+mean    var_432 mean  caa5dc5d_4+mean -5.754616e-04   9.898507e-01                     Undecided                     Undecided
+627  17dcc388_4+mean    var_478 mean  caa5dc5d_4+mean -5.246881e-04   9.908057e-01                     Undecided                     Undecided
+628  bb662430_4+mean    var_400 mean  caa5dc5d_4+mean  3.321806e-04   9.942370e-01                     Undecided                     Undecided
+629  128d67f3_4+mean    var_243 mean  caa5dc5d_4+mean -1.331261e-04   9.976386e-01                     Undecided                     Undecided
+
+[630 rows x 7 columns]
+next exploration: timestamp+mean
+           Candidate   Candidate Tag           Target         Slope        P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0     timestamp+mean  timestamp mean  d1a33a13_4+mean  2.251240e-08  3.683565e-153                     Undecided                     Undecided
+1    de74037b_4+mean          z mean  d1a33a13_4+mean  2.130712e-01   1.694649e-07                     Undecided                     Undecided
+2    a4c7e902_4+mean    var_675 mean  d1a33a13_4+mean -1.446477e-01   4.660162e-04                     Undecided                     Undecided
+3    9c9c16f9_4+mean    var_674 mean  d1a33a13_4+mean  1.314554e-01   1.804054e-03                     Undecided                     Undecided
+4    5c0f5d7a_4+mean    var_799 mean  d1a33a13_4+mean -1.281238e-01   2.335199e-03                     Undecided                     Undecided
+..               ...             ...              ...           ...            ...                           ...                           ...
+610  cbd9137d_4+mean    var_111 mean  d1a33a13_4+mean -8.246950e-04   9.842873e-01                     Undecided                     Undecided
+611  620c512e_4+mean    var_595 mean  d1a33a13_4+mean -4.333227e-04   9.917802e-01                     Undecided                     Undecided
+612  3ffb1965_4+mean      var_9 mean  d1a33a13_4+mean -3.644769e-04   9.930073e-01                     Undecided                     Undecided
+613  ad9bbb55_4+mean    var_276 mean  d1a33a13_4+mean -2.964970e-04   9.943210e-01                     Undecided                     Undecided
+614  e0b2ea2e_4+mean    var_874 mean  d1a33a13_4+mean  2.568028e-06   9.999504e-01                     Undecided                     Undecided
+
+[615 rows x 7 columns]
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 0.07118156011483734
+adjusted: -0.0003003592283405965
+Enumerated 6003 graphs with 4 nodes.
+               Source Source Tag                   Target               Target Tag   Change       ATE  Baseline ATE   ATE Ratio
+0     de74037b_4+mean     z mean          caa5dc5d_4+mean                   y mean   Remove  0.071182       -0.0003  236.988091
+2     de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean  Reverse  0.071182       -0.0003  236.988091
+1     de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean   Remove  0.013418       -0.0003   44.674817
+4004  de74037b_4+mean     z mean          caf1ed6d_4+mean               var_5 mean      Add -0.000300       -0.0003    1.000000
+4003  de74037b_4+mean     z mean          8551dd9b_4+mean               var_4 mean      Add -0.000300       -0.0003    1.000000
+4002  de74037b_4+mean     z mean          31b5a8ea_4+mean               var_3 mean      Add -0.000300       -0.0003    1.000000
+4001  de74037b_4+mean     z mean          5f6f1f7f_4+mean               var_2 mean      Add -0.000300       -0.0003    1.000000
+4000  de74037b_4+mean     z mean          137f4230_4+mean               var_1 mean      Add -0.000300       -0.0003    1.000000
+3999  de74037b_4+mean     z mean           timestamp+mean           timestamp mean      Add -0.000300       -0.0003    1.000000
+3998  caa5dc5d_4+mean     y mean  TemplateId=ffe6d318+sum  TemplateId ffe6d318 sum      Add -0.000300       -0.0003    1.000000
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:27:02.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 3.219960 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.175082 seconds! 2001 of the 4004001 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 1000
+number of parsed variables: 1002
+number of prepared variables: 2001
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  1.994315      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.999196      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.500367      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.500183      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.9943151587394428
+adjusted: -0.030422095618966694
+Enumerated 6003 graphs with 4 nodes.
+               Source Source Tag                   Target               Target Tag   Change       ATE  Baseline ATE  ATE Ratio
+0     de74037b_4+mean     z mean          caa5dc5d_4+mean                   y mean   Remove  1.994315     -0.030422  65.554825
+2     de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean  Reverse  1.994315     -0.030422  65.554825
+1     de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean   Remove  1.978315     -0.030422  65.028896
+4004  de74037b_4+mean     z mean          caf1ed6d_4+mean               var_5 mean      Add -0.030422     -0.030422   1.000000
+4003  de74037b_4+mean     z mean          8551dd9b_4+mean               var_4 mean      Add -0.030422     -0.030422   1.000000
+4002  de74037b_4+mean     z mean          31b5a8ea_4+mean               var_3 mean      Add -0.030422     -0.030422   1.000000
+4001  de74037b_4+mean     z mean          5f6f1f7f_4+mean               var_2 mean      Add -0.030422     -0.030422   1.000000
+4000  de74037b_4+mean     z mean          137f4230_4+mean               var_1 mean      Add -0.030422     -0.030422   1.000000
+3999  de74037b_4+mean     z mean           timestamp+mean           timestamp mean      Add -0.030422     -0.030422   1.000000
+3998  caa5dc5d_4+mean     y mean  TemplateId=ffe6d318+sum  TemplateId ffe6d318 sum      Add -0.030422     -0.030422   1.000000
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:13:01.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 0.149021 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.032275 seconds! 21 of the 441 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 10
+number of parsed variables: 12
+number of prepared variables: 21
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  2.000643      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.999894      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.499830      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.499778      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 2.0006434973683542
+adjusted: 0.09125296084935286
+Enumerated 63 graphs with 4 nodes.
+            Source Source Tag           Target      Target Tag   Change       ATE  Baseline ATE  ATE Ratio
+1  de74037b_4+mean     z mean  d1a33a13_4+mean          x mean   Remove  2.001384      0.091253  21.932261
+0  de74037b_4+mean     z mean  caa5dc5d_4+mean          y mean   Remove  2.000643      0.091253  21.924149
+2  de74037b_4+mean     z mean  d1a33a13_4+mean          x mean  Reverse  2.000643      0.091253  21.924149
+3  d1a33a13_4+mean     x mean   timestamp+mean  timestamp mean      Add  0.091253      0.091253   1.000000
+4  d1a33a13_4+mean     x mean  137f4230_4+mean      var_1 mean      Add  0.091253      0.091253   1.000000
+5  d1a33a13_4+mean     x mean  5f6f1f7f_4+mean      var_2 mean      Add  0.091253      0.091253   1.000000
+6  d1a33a13_4+mean     x mean  31b5a8ea_4+mean      var_3 mean      Add  0.091253      0.091253   1.000000
+7  d1a33a13_4+mean     x mean  8551dd9b_4+mean      var_4 mean      Add  0.091253      0.091253   1.000000
+8  d1a33a13_4+mean     x mean  caf1ed6d_4+mean      var_5 mean      Add  0.091253      0.091253   1.000000
+9  d1a33a13_4+mean     x mean  84300f1e_4+mean      var_6 mean      Add  0.091253      0.091253   1.000000
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:14:28.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 0.130190 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.111912 seconds! 21 of the 441 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 10
+number of parsed variables: 12
+number of prepared variables: 21
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  2.014766      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.991745      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.495062      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.491164      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 2.0147655863343257
+adjusted: 0.20511767517894697
+Enumerated 63 graphs with 4 nodes.
+            Source Source Tag           Target      Target Tag   Change       ATE  Baseline ATE  ATE Ratio
+1  de74037b_4+mean     z mean  d1a33a13_4+mean          x mean   Remove  2.082083      0.205118  10.150675
+0  de74037b_4+mean     z mean  caa5dc5d_4+mean          y mean   Remove  2.014766      0.205118   9.822486
+2  de74037b_4+mean     z mean  d1a33a13_4+mean          x mean  Reverse  2.014766      0.205118   9.822486
+3  d1a33a13_4+mean     x mean   timestamp+mean  timestamp mean      Add  0.205118      0.205118   1.000000
+4  d1a33a13_4+mean     x mean  137f4230_4+mean      var_1 mean      Add  0.205118      0.205118   1.000000
+5  d1a33a13_4+mean     x mean  5f6f1f7f_4+mean      var_2 mean      Add  0.205118      0.205118   1.000000
+6  d1a33a13_4+mean     x mean  31b5a8ea_4+mean      var_3 mean      Add  0.205118      0.205118   1.000000
+7  d1a33a13_4+mean     x mean  8551dd9b_4+mean      var_4 mean      Add  0.205118      0.205118   1.000000
+8  d1a33a13_4+mean     x mean  caf1ed6d_4+mean      var_5 mean      Add  0.205118      0.205118   1.000000
+9  d1a33a13_4+mean     x mean  84300f1e_4+mean      var_6 mean      Add  0.205118      0.205118   1.000000
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:15:59.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 0.154275 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.028818 seconds! 21 of the 441 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 10
+number of parsed variables: 12
+number of prepared variables: 21
+         Candidate Candidate Tag           Target     Slope        P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.498446   0.000000e+00                     Undecided                     Undecided
+1  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  1.541425  8.869480e-296                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope        P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  de74037b_4+mean        z mean  d1a33a13_4+mean  0.255237   0.000000e+00                     Undecided                     Undecided
+1  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.481309  8.869480e-296                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.5414247994329928
+adjusted: 0.03150535054783887
+Enumerated 63 graphs with 4 nodes.
+            Source Source Tag           Target      Target Tag   Change       ATE  Baseline ATE  ATE Ratio
+0  de74037b_4+mean     z mean  caa5dc5d_4+mean          y mean   Remove  1.541425      0.031505   48.92581
+2  de74037b_4+mean     z mean  d1a33a13_4+mean          x mean  Reverse  1.541425      0.031505   48.92581
+1  de74037b_4+mean     z mean  d1a33a13_4+mean          x mean   Remove  0.185394      0.031505    5.88453
+3  d1a33a13_4+mean     x mean   timestamp+mean  timestamp mean      Add  0.031505      0.031505    1.00000
+4  d1a33a13_4+mean     x mean  137f4230_4+mean      var_1 mean      Add  0.031505      0.031505    1.00000
+5  d1a33a13_4+mean     x mean  5f6f1f7f_4+mean      var_2 mean      Add  0.031505      0.031505    1.00000
+6  d1a33a13_4+mean     x mean  31b5a8ea_4+mean      var_3 mean      Add  0.031505      0.031505    1.00000
+7  d1a33a13_4+mean     x mean  8551dd9b_4+mean      var_4 mean      Add  0.031505      0.031505    1.00000
+8  d1a33a13_4+mean     x mean  caf1ed6d_4+mean      var_5 mean      Add  0.031505      0.031505    1.00000
+9  d1a33a13_4+mean     x mean  84300f1e_4+mean      var_6 mean      Add  0.031505      0.031505    1.00000
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:17:29.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 0.429600 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.029029 seconds! 201 of the 40401 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 100
+number of parsed variables: 102
+number of prepared variables: 201
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  1.999913      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.999823      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.499919      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.499848      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.9999126020633793
+adjusted: 0.04273110400446001
+Enumerated 603 graphs with 4 nodes.
+              Source Source Tag                   Target               Target Tag   Change       ATE  Baseline ATE  ATE Ratio
+1    de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean   Remove  2.000549      0.042731  46.817167
+0    de74037b_4+mean     z mean          caa5dc5d_4+mean                   y mean   Remove  1.999913      0.042731  46.802268
+2    de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean  Reverse  1.999913      0.042731  46.802268
+392  caa5dc5d_4+mean     y mean  TemplateId=ec9ebeae+sum  TemplateId ec9ebeae sum      Add  0.042731      0.042731   1.000000
+393  caa5dc5d_4+mean     y mean  TemplateId=efc91945+sum  TemplateId efc91945 sum      Add  0.042731      0.042731   1.000000
+394  caa5dc5d_4+mean     y mean  TemplateId=f17e29fe+sum  TemplateId f17e29fe sum      Add  0.042731      0.042731   1.000000
+395  caa5dc5d_4+mean     y mean  TemplateId=f37ddeab+sum  TemplateId f37ddeab sum      Add  0.042731      0.042731   1.000000
+396  caa5dc5d_4+mean     y mean  TemplateId=f61c0497+sum  TemplateId f61c0497 sum      Add  0.042731      0.042731   1.000000
+397  caa5dc5d_4+mean     y mean  TemplateId=fc884741+sum  TemplateId fc884741 sum      Add  0.042731      0.042731   1.000000
+398  caa5dc5d_4+mean     y mean  TemplateId=fdbbf0db+sum  TemplateId fdbbf0db sum      Add  0.042731      0.042731   1.000000
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:23:51.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 0.429103 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.027463 seconds! 201 of the 40401 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 100
+number of parsed variables: 102
+number of prepared variables: 201
+                  Candidate            Candidate Tag  ... Candidate->Target Edge Status  Target->Candidate Edge Status
+0            timestamp+mean           timestamp mean  ...                     Undecided                      Undecided
+1           de74037b_4+mean                   z mean  ...                     Undecided                      Undecided
+2           84300f1e_4+mean               var_6 mean  ...                     Undecided                      Undecided
+3           efc91945_4+mean              var_48 mean  ...                     Undecided                      Undecided
+4           412bd3a3_4+mean              var_73 mean  ...                     Undecided                      Undecided
+5           a072850c_4+mean              var_64 mean  ...                     Undecided                      Undecided
+6           0114048a_4+mean              var_85 mean  ...                     Undecided                      Undecided
+7           fc884741_4+mean              var_29 mean  ...                     Undecided                      Undecided
+8           6d83e0b2_4+mean              var_57 mean  ...                     Undecided                      Undecided
+9           16224f94_4+mean              var_33 mean  ...                     Undecided                      Undecided
+10          92ca6105_4+mean              var_19 mean  ...                     Undecided                      Undecided
+11          30349da0_4+mean              var_60 mean  ...                     Undecided                      Undecided
+12          d806b3d2_4+mean              var_96 mean  ...                     Undecided                      Undecided
+13          59b61188_4+mean              var_26 mean  ...                     Undecided                      Undecided
+14          17f123f5_4+mean              var_24 mean  ...                     Undecided                      Undecided
+15          a84c0114_4+mean              var_40 mean  ...                     Undecided                      Undecided
+16          da1bffe9_4+mean              var_20 mean  ...                     Undecided                      Undecided
+17          137f4230_4+mean               var_1 mean  ...                     Undecided                      Undecided
+18          24a876bf_4+mean              var_59 mean  ...                     Undecided                      Undecided
+19          3f7ecabf_4+mean              var_71 mean  ...                     Undecided                      Undecided
+20          173d44ff_4+mean              var_89 mean  ...                     Undecided                      Undecided
+21          c29c6cc3_4+mean              var_42 mean  ...                     Undecided                      Undecided
+22          5b3a1235_4+mean              var_72 mean  ...                     Undecided                      Undecided
+23          f61c0497_4+mean              var_14 mean  ...                     Undecided                      Undecided
+24          ae1ae339_4+mean              var_82 mean  ...                     Undecided                      Undecided
+25          8264bf56_4+mean              var_88 mean  ...                     Undecided                      Undecided
+26          c1fcb6f8_4+mean              var_41 mean  ...                     Undecided                      Undecided
+27          bad9b738_4+mean              var_70 mean  ...                     Undecided                      Undecided
+28          e05b6ac6_4+mean              var_66 mean  ...                     Undecided                      Undecided
+29          ac417a23_4+mean              var_27 mean  ...                     Undecided                      Undecided
+30          31b5a8ea_4+mean               var_3 mean  ...                     Undecided                      Undecided
+31          b22e0642_4+mean              var_38 mean  ...                     Undecided                      Undecided
+32          215b4081_4+mean              var_44 mean  ...                     Undecided                      Undecided
+33          5f6f1f7f_4+mean               var_2 mean  ...                     Undecided                      Undecided
+34          979d782f_4+mean              var_67 mean  ...                     Undecided                      Undecided
+35          a9e94c1a_4+mean              var_75 mean  ...                     Undecided                      Undecided
+36          d59d24b8_4+mean              var_56 mean  ...                     Undecided                      Undecided
+37          1f4ef213_4+mean              var_61 mean  ...                     Undecided                      Undecided
+38          19ad6f5d_4+mean              var_92 mean  ...                     Undecided                      Undecided
+39          b15cfb61_4+mean              var_36 mean  ...                     Undecided                      Undecided
+40          800a1ce7_4+mean              var_25 mean  ...                     Undecided                      Undecided
+41          530dfd6c_4+mean              var_84 mean  ...                     Undecided                      Undecided
+42          0a10d15d_4+mean              var_12 mean  ...                     Undecided                      Undecided
+43          c694cf53_4+mean              var_15 mean  ...                     Undecided                      Undecided
+44          a42873ce_4+mean              var_10 mean  ...                     Undecided                      Undecided
+45  TemplateId=0114048a+sum  TemplateId 0114048a sum  ...                     Undecided                      Undecided
+46          ae74b91e_4+mean               var_7 mean  ...                     Undecided                      Undecided
+
+[47 rows x 7 columns]
+next exploration: timestamp+mean
+                  Candidate            Candidate Tag           Target  ...       P-value  Candidate->Target Edge Status Target->Candidate Edge Status
+0           de74037b_4+mean                   z mean  d1a33a13_4+mean  ...  1.011140e-70                      Undecided                     Undecided
+1           c694cf53_4+mean              var_15 mean  d1a33a13_4+mean  ...  1.605046e-03                      Undecided                     Undecided
+2           34dff4ab_4+mean              var_52 mean  d1a33a13_4+mean  ...  2.072717e-03                      Undecided                     Undecided
+3           30349da0_4+mean              var_60 mean  d1a33a13_4+mean  ...  3.033242e-02                      Undecided                     Undecided
+4           a9e94c1a_4+mean              var_75 mean  d1a33a13_4+mean  ...  3.107000e-02                      Undecided                     Undecided
+5           93259594_4+mean              var_63 mean  d1a33a13_4+mean  ...  5.486408e-02                      Undecided                     Undecided
+6           5a8d4137_4+mean              var_87 mean  d1a33a13_4+mean  ...  7.531073e-02                      Undecided                     Undecided
+7           857dc518_4+mean              var_16 mean  d1a33a13_4+mean  ...  7.831319e-02                      Undecided                     Undecided
+8           9cdd4cae_4+mean              var_77 mean  d1a33a13_4+mean  ...  8.209447e-02                      Undecided                     Undecided
+9           3550e403_4+mean              var_54 mean  d1a33a13_4+mean  ...  9.456790e-02                      Undecided                     Undecided
+10          a4f89551_4+mean              var_53 mean  d1a33a13_4+mean  ...  1.009051e-01                      Undecided                     Undecided
+11          b15cfb61_4+mean              var_36 mean  d1a33a13_4+mean  ...  1.204628e-01                      Undecided                     Undecided
+12          9a3914f5_4+mean              var_97 mean  d1a33a13_4+mean  ...  1.308110e-01                      Undecided                     Undecided
+13          3df11b87_4+mean              var_83 mean  d1a33a13_4+mean  ...  1.677134e-01                      Undecided                     Undecided
+14          57ebbffe_4+mean              var_32 mean  d1a33a13_4+mean  ...  1.712531e-01                      Undecided                     Undecided
+15          0e81c436_4+mean              var_65 mean  d1a33a13_4+mean  ...  1.724969e-01                      Undecided                     Undecided
+16          17e1a857_4+mean              var_68 mean  d1a33a13_4+mean  ...  2.053338e-01                      Undecided                     Undecided
+17          354fc545_4+mean              var_22 mean  d1a33a13_4+mean  ...  2.165704e-01                      Undecided                     Undecided
+18          8264bf56_4+mean              var_88 mean  d1a33a13_4+mean  ...  2.228854e-01                      Undecided                     Undecided
+19          3f7ecabf_4+mean              var_71 mean  d1a33a13_4+mean  ...  2.360555e-01                      Undecided                     Undecided
+20          2d2d3673_4+mean              var_35 mean  d1a33a13_4+mean  ...  2.374633e-01                      Undecided                     Undecided
+21          16224f94_4+mean              var_33 mean  d1a33a13_4+mean  ...  2.476926e-01                      Undecided                     Undecided
+22          6f6b72f6_4+mean              var_81 mean  d1a33a13_4+mean  ...  2.494380e-01                      Undecided                     Undecided
+23          e05b6ac6_4+mean              var_66 mean  d1a33a13_4+mean  ...  2.812121e-01                      Undecided                     Undecided
+24  TemplateId=0a10d15d+sum  TemplateId 0a10d15d sum  d1a33a13_4+mean  ...  2.860104e-01                      Undecided                     Undecided
+25          5f6f1f7f_4+mean               var_2 mean  d1a33a13_4+mean  ...  3.079351e-01                      Undecided                     Undecided
+26          800a1ce7_4+mean              var_25 mean  d1a33a13_4+mean  ...  3.512564e-01                      Undecided                     Undecided
+27          de5e7e83_4+mean              var_31 mean  d1a33a13_4+mean  ...  3.678673e-01                      Undecided                     Undecided
+28          4181c9e1_4+mean              var_37 mean  d1a33a13_4+mean  ...  3.849135e-01                      Undecided                     Undecided
+29          3ffb1965_4+mean               var_9 mean  d1a33a13_4+mean  ...  3.910143e-01                      Undecided                     Undecided
+30          ba17a8af_4+mean              var_46 mean  d1a33a13_4+mean  ...  3.942016e-01                      Undecided                     Undecided
+31          205520b0_4+mean              var_74 mean  d1a33a13_4+mean  ...  4.079848e-01                      Undecided                     Undecided
+32          caf1ed6d_4+mean               var_5 mean  d1a33a13_4+mean  ...  4.140748e-01                      Undecided                     Undecided
+33          59b61188_4+mean              var_26 mean  d1a33a13_4+mean  ...  4.538823e-01                      Undecided                     Undecided
+34          fc884741_4+mean              var_29 mean  d1a33a13_4+mean  ...  4.972999e-01                      Undecided                     Undecided
+35          979d782f_4+mean              var_67 mean  d1a33a13_4+mean  ...  5.011862e-01                      Undecided                     Undecided
+36          8dca130a_4+mean              var_69 mean  d1a33a13_4+mean  ...  5.160800e-01                      Undecided                     Undecided
+37          0a73ac5f_4+mean              var_86 mean  d1a33a13_4+mean  ...  5.536533e-01                      Undecided                     Undecided
+38          1f5a65d5_4+mean              var_95 mean  d1a33a13_4+mean  ...  5.797071e-01                      Undecided                     Undecided
+39          ec9ebeae_4+mean              var_58 mean  d1a33a13_4+mean  ...  6.055738e-01                      Undecided                     Undecided
+40          62c8a2a1_4+mean              var_13 mean  d1a33a13_4+mean  ...  6.145937e-01                      Undecided                     Undecided
+41          cd153117_4+mean              var_11 mean  d1a33a13_4+mean  ...  6.243823e-01                      Undecided                     Undecided
+42          412bd3a3_4+mean              var_73 mean  d1a33a13_4+mean  ...  6.621324e-01                      Undecided                     Undecided
+43          19ad6f5d_4+mean              var_92 mean  d1a33a13_4+mean  ...  6.638849e-01                      Undecided                     Undecided
+44          bad9b738_4+mean              var_70 mean  d1a33a13_4+mean  ...  7.160016e-01                      Undecided                     Undecided
+45          24a876bf_4+mean              var_59 mean  d1a33a13_4+mean  ...  7.327483e-01                      Undecided                     Undecided
+46          6d83e0b2_4+mean              var_57 mean  d1a33a13_4+mean  ...  7.691143e-01                      Undecided                     Undecided
+47          a42873ce_4+mean              var_10 mean  d1a33a13_4+mean  ...  8.045042e-01                      Undecided                     Undecided
+48          3ba8db79_4+mean              var_34 mean  d1a33a13_4+mean  ...  8.154199e-01                      Undecided                     Undecided
+49          d59d24b8_4+mean              var_56 mean  d1a33a13_4+mean  ...  8.519283e-01                      Undecided                     Undecided
+50          530dfd6c_4+mean              var_84 mean  d1a33a13_4+mean  ...  9.895832e-01                      Undecided                     Undecided
+
+[51 rows x 7 columns]
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 0.4990380593838637
+adjusted: -0.02707322526607925
+Enumerated 603 graphs with 4 nodes.
+              Source Source Tag                   Target               Target Tag   Change       ATE  Baseline ATE  ATE Ratio
+0    de74037b_4+mean     z mean          caa5dc5d_4+mean                   y mean   Remove  0.499038     -0.027073   18.43290
+2    de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean  Reverse  0.499038     -0.027073   18.43290
+1    de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean   Remove  0.017782     -0.027073    1.52247
+392  caa5dc5d_4+mean     y mean  TemplateId=ec9ebeae+sum  TemplateId ec9ebeae sum      Add -0.027073     -0.027073    1.00000
+393  caa5dc5d_4+mean     y mean  TemplateId=efc91945+sum  TemplateId efc91945 sum      Add -0.027073     -0.027073    1.00000
+394  caa5dc5d_4+mean     y mean  TemplateId=f17e29fe+sum  TemplateId f17e29fe sum      Add -0.027073     -0.027073    1.00000
+395  caa5dc5d_4+mean     y mean  TemplateId=f37ddeab+sum  TemplateId f37ddeab sum      Add -0.027073     -0.027073    1.00000
+396  caa5dc5d_4+mean     y mean  TemplateId=f61c0497+sum  TemplateId f61c0497 sum      Add -0.027073     -0.027073    1.00000
+397  caa5dc5d_4+mean     y mean  TemplateId=fc884741+sum  TemplateId fc884741 sum      Add -0.027073     -0.027073    1.00000
+398  caa5dc5d_4+mean     y mean  TemplateId=fdbbf0db+sum  TemplateId fdbbf0db sum      Add -0.027073     -0.027073    1.00000
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:20:40.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 0.349841 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.039833 seconds! 201 of the 40401 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 100
+number of parsed variables: 102
+number of prepared variables: 201
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  d1a33a13_4+mean        x mean  caa5dc5d_4+mean  1.995647      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  caa5dc5d_4+mean  0.991531      0.0                     Undecided                     Undecided
+next exploration: timestamp+mean
+         Candidate Candidate Tag           Target     Slope  P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0  caa5dc5d_4+mean        y mean  d1a33a13_4+mean  0.490080      0.0                     Undecided                     Undecided
+1  de74037b_4+mean        z mean  d1a33a13_4+mean  0.487814      0.0                     Undecided                     Undecided
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.9956469508896857
+adjusted: 0.043946302165011275
+Enumerated 603 graphs with 4 nodes.
+              Source Source Tag                   Target               Target Tag   Change       ATE  Baseline ATE  ATE Ratio
+0    de74037b_4+mean     z mean          caa5dc5d_4+mean                   y mean   Remove  1.995647      0.043946  45.411032
+2    de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean  Reverse  1.995647      0.043946  45.411032
+1    de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean   Remove  1.927422      0.043946  43.858579
+392  caa5dc5d_4+mean     y mean  TemplateId=ec9ebeae+sum  TemplateId ec9ebeae sum      Add  0.043946      0.043946   1.000000
+393  caa5dc5d_4+mean     y mean  TemplateId=efc91945+sum  TemplateId efc91945 sum      Add  0.043946      0.043946   1.000000
+394  caa5dc5d_4+mean     y mean  TemplateId=f17e29fe+sum  TemplateId f17e29fe sum      Add  0.043946      0.043946   1.000000
+395  caa5dc5d_4+mean     y mean  TemplateId=f37ddeab+sum  TemplateId f37ddeab sum      Add  0.043946      0.043946   1.000000
+396  caa5dc5d_4+mean     y mean  TemplateId=f61c0497+sum  TemplateId f61c0497 sum      Add  0.043946      0.043946   1.000000
+397  caa5dc5d_4+mean     y mean  TemplateId=fc884741+sum  TemplateId fc884741 sum      Add  0.043946      0.043946   1.000000
+398  caa5dc5d_4+mean     y mean  TemplateId=fdbbf0db+sum  TemplateId fdbbf0db sum      Add  0.043946      0.043946   1.000000
+Initialized Sawmill with log file ~/causal-log/datasets_raw/xyz_extended/log_2023-12-22_13:47:11.log
+Work directory set to ../../datasets/xyz_extended/
+Parsing complete in 3.653968 seconds!
+Causal unit set to machine (tag: machine) 
+Preparation complete in 0.041868 seconds! 2001 of the 4004001 possible edges were auto-rejected.
+----------------------------------------
+number of parsed templates: 1000
+number of parsed variables: 1002
+number of prepared variables: 2001
+          Candidate Candidate Tag           Target     Slope   P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0   de74037b_4+mean        z mean  caa5dc5d_4+mean  0.984834  0.000000                     Undecided                     Undecided
+1   079926c0_4+mean  var_738 mean  caa5dc5d_4+mean -0.095172  0.002500                     Undecided                     Undecided
+2   3a83887a_4+mean  var_731 mean  caa5dc5d_4+mean  0.071713  0.023068                     Undecided                     Undecided
+3   4181c9e1_4+mean   var_37 mean  caa5dc5d_4+mean -0.069981  0.025124                     Undecided                     Undecided
+4   e56d7af7_4+mean  var_235 mean  caa5dc5d_4+mean  0.063032  0.042559                     Undecided                     Undecided
+..              ...           ...              ...       ...       ...                           ...                           ...
+67  c3d216a4_4+mean  var_490 mean  caa5dc5d_4+mean  0.003748  0.905868                     Undecided                     Undecided
+68  857dc518_4+mean   var_16 mean  caa5dc5d_4+mean  0.002666  0.934336                     Undecided                     Undecided
+69  8ca5c584_4+mean  var_129 mean  caa5dc5d_4+mean  0.002496  0.938764                     Undecided                     Undecided
+70  4a400d82_4+mean  var_843 mean  caa5dc5d_4+mean -0.000368  0.990844                     Undecided                     Undecided
+71  92ca6105_4+mean   var_19 mean  caa5dc5d_4+mean -0.000197  0.994944                     Undecided                     Undecided
+
+[72 rows x 7 columns]
+next exploration: timestamp+mean
+          Candidate Candidate Tag           Target     Slope   P-value Candidate->Target Edge Status Target->Candidate Edge Status
+0   de74037b_4+mean        z mean  d1a33a13_4+mean  0.492308  0.000000                     Undecided                     Undecided
+1   afc49434_4+mean  var_303 mean  d1a33a13_4+mean -0.046328  0.005242                     Undecided                     Undecided
+2   81974902_4+mean  var_337 mean  d1a33a13_4+mean -0.041843  0.012078                     Undecided                     Undecided
+3   05ab8a2e_4+mean  var_275 mean  d1a33a13_4+mean  0.040755  0.015378                     Undecided                     Undecided
+4   8f85b38d_4+mean  var_146 mean  d1a33a13_4+mean -0.040903  0.016694                     Undecided                     Undecided
+..              ...           ...              ...       ...       ...                           ...                           ...
+68  bb61fe0d_4+mean  var_158 mean  d1a33a13_4+mean  0.001424  0.933414                     Undecided                     Undecided
+69  33f64977_4+mean  var_316 mean  d1a33a13_4+mean  0.001193  0.944176                     Undecided                     Undecided
+70  dbb7749f_4+mean  var_833 mean  d1a33a13_4+mean -0.000373  0.982190                     Undecided                     Undecided
+71  e9d40a8e_4+mean  var_899 mean  d1a33a13_4+mean  0.000304  0.985521                     Undecided                     Undecided
+72  fa35ef78_4+mean  var_421 mean  d1a33a13_4+mean  0.000248  0.988172                     Undecided                     Undecided
+
+[73 rows x 7 columns]
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+unadjusted: 1.728871091035681
+adjusted: -0.024599844811646676
+Enumerated 6003 graphs with 4 nodes.
+               Source Source Tag                   Target               Target Tag   Change       ATE  Baseline ATE  ATE Ratio
+0     de74037b_4+mean     z mean          caa5dc5d_4+mean                   y mean   Remove  1.728871       -0.0246  70.279756
+2     de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean  Reverse  1.728871       -0.0246  70.279756
+1     de74037b_4+mean     z mean          d1a33a13_4+mean                   x mean   Remove  1.196118       -0.0246  48.622998
+4004  de74037b_4+mean     z mean          caf1ed6d_4+mean               var_5 mean      Add -0.024600       -0.0246   1.000000
+4003  de74037b_4+mean     z mean          8551dd9b_4+mean               var_4 mean      Add -0.024600       -0.0246   1.000000
+4002  de74037b_4+mean     z mean          31b5a8ea_4+mean               var_3 mean      Add -0.024600       -0.0246   1.000000
+4001  de74037b_4+mean     z mean          5f6f1f7f_4+mean               var_2 mean      Add -0.024600       -0.0246   1.000000
+4000  de74037b_4+mean     z mean          137f4230_4+mean               var_1 mean      Add -0.024600       -0.0246   1.000000
+3999  de74037b_4+mean     z mean           timestamp+mean           timestamp mean      Add -0.024600       -0.0246   1.000000
+3998  caa5dc5d_4+mean     y mean  TemplateId=ffe6d318+sum  TemplateId ffe6d318 sum      Add -0.024600       -0.0246   1.000000

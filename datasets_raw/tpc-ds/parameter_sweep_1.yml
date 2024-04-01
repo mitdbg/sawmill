@@ -1,0 +1,21 @@
+runs: 2
+parameters:
+  - name: work_mem
+    default: 4096
+    settings: [128, 256]
+  - name: max_parallel_workers
+    default: 8
+    settings: [1, 2]
+  - name: effective_cache_size
+    default: 524288
+    settings: [262144, 524288]
+  - name: maintenance_work_mem
+    default: 65536
+    settings: [32768, 65536]
+  - name: random_page_cost
+    default: 4
+    settings: [4, 1000]
+  - name: seq_page_cost
+    default: 1
+    settings: [1, 1000]
+    

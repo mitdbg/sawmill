@@ -1,0 +1,108 @@
+Generated log with 10 templates
+Initialized Sawmill with log file ../../datasets_raw/micro-templates/log_10.log
+Work directory set to ../../datasets/micro-templates/2023-12-19 12:58:25.027157/
+Parsing file: ../../datasets_raw/micro-templates/log_10.log
+Parsing complete in 0.682249 seconds!
+Number of templates: 10
+Number of parsed variables: 11
+Causal unit set to LineID (tag: LineID) 
+Determining the causal unit assignment...
+Calculating aggregates for each causal unit...
+Successfully prepared the log with causal unit LineID (tag: LineID)
+             ad33fcb8_2+mean  ad33fcb8_2+max  ad33fcb8_2+min  3147b09c_2+mean  3147b09c_2+max  3147b09c_2+min  ...  7c590ad2_2+mean  7c590ad2_2+max  7c590ad2_2+min  481f44e1_2+mean  481f44e1_2+max  481f44e1_2+min
+LineID+mode                                                                                                    ...                                                                                                  
+line_0                   0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1                   0.0             0.0             0.0              1.0             1.0             1.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_10                  0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_100                 0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1000                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1001                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1002                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1003                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1004                0.0             0.0             0.0              0.0             0.0             0.0  ...           1004.0          1004.0          1004.0              0.0             0.0             0.0
+line_1005                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+
+[10 rows x 30 columns]
+Preparation complete in 16.501067 seconds! 30 of the 900 possible edges were auto-rejected.
+Shape of prepared log: (10000, 30)
+Generated log with 100 templates
+Initialized Sawmill with log file ../../datasets_raw/micro-templates/log_100.log
+Work directory set to ../../datasets/micro-templates/2023-12-19 12:58:42.243237/
+Parsing file: ../../datasets_raw/micro-templates/log_100.log
+Parsing complete in 1.779893 seconds!
+Number of templates: 100
+Number of parsed variables: 101
+Causal unit set to LineID (tag: LineID) 
+Determining the causal unit assignment...
+Calculating aggregates for each causal unit...
+Successfully prepared the log with causal unit LineID (tag: LineID)
+             3ed280f0_2+mean  3ed280f0_2+max  3ed280f0_2+min  d9136635_2+mean  d9136635_2+max  d9136635_2+min  ...  4762e8df_2+mean  4762e8df_2+max  4762e8df_2+min  0689647c_2+mean  0689647c_2+max  0689647c_2+min
+LineID+mode                                                                                                    ...                                                                                                  
+line_0                   0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1                   0.0             0.0             0.0              1.0             1.0             1.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_10                  0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_100                 0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1000                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1001                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1002                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1003                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1004                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1005                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+
+[10 rows x 300 columns]
+Preparation complete in 145.807186 seconds! 300 of the 90000 possible edges were auto-rejected.
+Shape of prepared log: (10000, 300)
+Generated log with 1000 templates
+Initialized Sawmill with log file ../../datasets_raw/micro-templates/log_1000.log
+Work directory set to ../../datasets/micro-templates/2023-12-19 13:01:09.862966/
+Parsing file: ../../datasets_raw/micro-templates/log_1000.log
+Parsing complete in 12.341835 seconds!
+Number of templates: 1000
+Number of parsed variables: 1000
+Causal unit set to LineID (tag: LineID) 
+Determining the causal unit assignment...
+Calculating aggregates for each causal unit...
+Successfully prepared the log with causal unit LineID (tag: LineID)
+             c752a61f_2+mean  c752a61f_2+max  c752a61f_2+min  f66c89b3_2+mean  f66c89b3_2+max  f66c89b3_2+min  ...  3c2632e2_2+mean  3c2632e2_2+max  3c2632e2_2+min  7f038b5e_2+mean  7f038b5e_2+max  7f038b5e_2+min
+LineID+mode                                                                                                    ...                                                                                                  
+line_0                   0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1                   0.0             0.0             0.0              1.0             1.0             1.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_10                  0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_100                 0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1000                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1001                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1002                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1003                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1004                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1005                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+
+[10 rows x 2997 columns]
+Preparation complete in 1436.889447 seconds! 2997 of the 8982009 possible edges were auto-rejected.
+Shape of prepared log: (10000, 2997)
+Generated log with 10000 templates
+Initialized Sawmill with log file ../../datasets_raw/micro-templates/log_10000.log
+Work directory set to ../../datasets/micro-templates/2023-12-19 13:25:19.133183/
+Parsing file: ../../datasets_raw/micro-templates/log_10000.log
+Parsing complete in 54.166872 seconds!
+Number of templates: 6324
+Number of parsed variables: 2654
+Causal unit set to LineID (tag: LineID) 
+Determining the causal unit assignment...
+Calculating aggregates for each causal unit...
+Successfully prepared the log with causal unit LineID (tag: LineID)
+             f6b81399_2+mean  f6b81399_2+max  f6b81399_2+min  532deecc_2+mean  532deecc_2+max  532deecc_2+min  ...  6e03dd53_2+mean  6e03dd53_2+max  6e03dd53_2+min  764eff08_2+mean  764eff08_2+max  764eff08_2+min
+LineID+mode                                                                                                    ...                                                                                                  
+line_0                   0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1                   0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_10                  0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_100                 0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1000                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1001                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1002                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1003                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1004                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+line_1005                0.0             0.0             0.0              0.0             0.0             0.0  ...              0.0             0.0             0.0              0.0             0.0             0.0
+
+[10 rows x 7959 columns]
+Preparation complete in 3814.050842 seconds! 7959 of the 63345681 possible edges were auto-rejected.
+Shape of prepared log: (10000, 7959)

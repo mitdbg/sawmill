@@ -1,0 +1,90 @@
+import statsmodels.api as sm
+import pandas as pd
+
+
+class Regression:
+    """
+    A collection of regression-related functions.
+    """
+
+    @staticmethod
+    def ols(X_name: str, X_data: pd.Series, Y_data: pd.Series) -> dict:
+        """
+        Calculate the slope and p-value of a linear regression of `X` on `Y`.
+
+        Parameters:
+            X_name: The name of the predictor variable.
+            X_data: The data for the predictor variable.
+            Y_data: The data for the target variable.
+
+        Returns:
+            A dictionary containing the slope and p-value of the regression. If
+            there is no slope parameter because X_data does not vary enough,
+            the slope and p-value will be None.
+        """
+        X_data = sm.add_constant(X_data)
+        model = sm.OLS(Y_data, X_data).fit()
+        slope = None
+        p_value = None
+        if len(model.params) > 1:
+            slope = model.params.iloc[1]
+            p_value = model.pvalues.iloc[1]
+        return {
+            "Candidate": X_name,
+            "Slope": slope,
+            "P-value": p_value,
+        }
+
+    @staticmethod
+    def multi_ols(
+        X_names: list[str], X_data: pd.DataFrame, Y_data: pd.Series
+    ) -> pd.DataFrame:
+        """
+        Calculate the slopes and p-values of a multivariate linear regression
+        of the variables in `X` on `Y`. Normalize each column to zero mean and
+        unit variance before running the regression. Return both the normalized
+        and unnormalized slopes.
+
+        Parameters:
+            X_names: The names of the predictor variables.
+            X_data: The data for the predictor variables.
+            Y_data: The data for the target variable.
+
+        Returns:
+            A dataframe with the names, slopes, and p-values of the regressions.
+        """
+
+        # Normalize the X data to zero mean and unit variance and add a constant
+        # column. If the standard deviation is zero, set the column to zero.
+        stdevs = X_data.std()
+
+        for column in X_data.columns:
+            if stdevs[column] == 0:
+                X_data.loc[:, column] = 0
+            else:
+                X_data.loc[:, column] = (X_data[column] - X_data[column].mean()) / stdevs[
+                    column
+                ]
+
+        X_data = sm.add_constant(X_data)
+        model = sm.OLS(Y_data, X_data).fit()
+
+        # Get the coefficients and p-values, ignoring the constant
+        coefficients = model.params.iloc[1:]
+        p_values = model.pvalues.iloc[1:]
+
+        # Unnormalize the slopes
+        coefficients_unnormalized = coefficients.copy()
+        for coeff in coefficients_unnormalized.index:
+            coefficients_unnormalized[coeff] = (
+                coefficients[coeff] / stdevs[coeff] if stdevs[coeff] != 0 else 0
+            )
+
+        return pd.DataFrame(
+            {
+                "Candidate": coefficients.index,
+                "Slope": coefficients_unnormalized.values,
+                "P-value": p_values.values,
+                "Normalized Slope": coefficients.values,
+            }
+        )

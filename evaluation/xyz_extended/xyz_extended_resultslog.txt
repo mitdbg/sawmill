@@ -1,0 +1,10 @@
+num_total_variables,noise_radius,x_to_y_rank,z_to_y_rank,z_to_x_rank,unadjusted,adjusted,top3_y_cands,top3_x_cands
+10,1,0,1,1,2.0006434973683542,0.09125296084935286,"['x mean', 'z mean']","['y mean', 'z mean']"
+10,10,0,1,1,2.0147655863343257,0.20511767517894697,"['x mean', 'z mean']","['y mean', 'z mean']"
+10,100,1,0,0,1.5414247994329928,0.03150535054783887,"['z mean', 'x mean']","['z mean', 'y mean']"
+100,1,0,1,1,1.9999126020633793,0.04273110400446001,"['x mean', 'z mean']","['y mean', 'z mean']"
+100,10,0,1,1,1.9956469508896857,0.043946302165011275,"['x mean', 'z mean']","['y mean', 'z mean']"
+100,100,-1,1,0,0.4990380593838637,-0.02707322526607925,"['tstamp mean', 'z mean', 'var_6 mean']","['z mean', 'var_15 mean', 'var_52 mean']"
+1000,1,0,1,1,1.9943151587394428,-0.030422095618966694,"['x mean', 'z mean']","['y mean', 'z mean']"
+1000,10,-1,0,0,1.728871091035681,-0.024599844811646676,"['z mean', 'var_738 mean', 'var_731 mean']","['z mean', 'var_303 mean', 'var_337 mean']"
+1000,100,42,1,1,0.07118156011483734,-0.0003003592283405965,"['tstamp mean', 'z mean', 'var_452 mean']","['tstamp mean', 'z mean', 'var_675 mean']"
