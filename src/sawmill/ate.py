@@ -29,6 +29,7 @@ import networkx as nx
 import pickle
 import os
 from .pickler import Pickler
+from eccs.eccs import ECCS
 
 
 class Pruner:
@@ -245,7 +246,7 @@ class ATECalculator:
         treatment: str,
         outcome: str,
         confounder: Optional[str] = None,
-        graph: Optional[nx.DiGraph()] = None,
+        graph: Optional[nx.DiGraph] = None,
         calculate_p_value: bool = True,
         calculate_std_error: bool = True,
         get_estimand: bool = False,
@@ -350,8 +351,9 @@ class ATECalculator:
             treatment: The name or tag of the treatment variable.
             outcome: The name or tag of the outcome variable.
             work_dir: The directory to store intermediate files in.
-            num_outputs: The number of candidate changes to output.
-            method: The method to use for ATE calculation. Can be either "step" or "clustering".
+            num_outputs: The maximum number of candidate changes to output.
+            method: The method to use for ATE calculation. Can be one of: "step", "clustering", 
+                "eccs-singleedit", "eccs-heuristicedit" or "eccs-adjsetedit".
             cp: The parameters to use for clustering. Only used if `method` is "clustering".
         Returns:
             A dataframe containing the edge changes that would most impact the ATE.
@@ -368,6 +370,10 @@ class ATECalculator:
                 data, vars, true_graph, treatment, outcome, work_dir, num_outputs, cp
             )
             return challenger.challenge()
+        elif method.startswith("eccs"):
+            challenger = ECCSATEChallenger(
+                data, vars, true_graph, treatment, outcome, num_outputs, method
+            )
         else:
             raise ValueError(f"Unknown method: {method}")
 
@@ -451,7 +457,7 @@ class StepATEChallenger:
 
         # Add all possible edges
         for node in self.true_graph.nodes:
-            for other_node in self.vars['Name'].values.tolist():
+            for other_node in self.vars["Name"].values.tolist():
                 if node != other_node and not self.true_graph.has_edge(
                     node, other_node
                 ):
@@ -1138,3 +1144,100 @@ class ClusteringATEChallenger:
         )["ATE"]
         ate_score = np.abs(ate - user_ate)
         return edge_score, ate_score
+
+
+class ECCSATEChallenger:
+    """
+    A class to calculate edge changes impactful to an ATE calculation using ECCS.
+    """
+
+    def __init__(
+        self,
+        data: pd.DataFrame,
+        vars: pd.DataFrame,
+        true_graph: Optional[nx.DiGraph],
+        treatment: str,
+        outcome: str,
+        num_outputs: int = 10,
+        method: str = "eccs-adjsetedit",
+    ) -> None:
+        """
+        Initializes an ECCSATEChallenger.
+
+        Parameters:
+            data: The dataframe containing the data.
+            vars: The dataframe containing information about the variables.
+            true_graph: The starting graph to be used for causal analysis.
+            treatment: The name or tag of the treatment variable.
+            outcome: The name or tag of the outcome variable.
+            num_outputs: The maximum number of candidate changes to output.
+            method: The method to use for ATE calculation. Can be one of: "eccs-singleedit", "eccs-heuristicedit" or "eccs-adjsetedit".
+        """
+        if method not in ["eccs-singleedit", "eccs-heuristicedit", "eccs-adjsetedit"]:
+            raise ValueError(f"Unknown method: {method}")
+
+        self.data = data
+        self.vars = vars
+        self.true_graph = true_graph
+        self.treatment = TagUtils.name_of(self.vars, treatment, "prepared")
+        self.outcome = TagUtils.name_of(self.vars, outcome, "prepared")
+        self.num_outputs = num_outputs
+
+        if method == "eccs-singleedit":
+            self.method = "best_single_edge_change"
+        elif method == "eccs-heuristicedit":
+            self.method = "astar_single_edge_change"
+        else:
+            self.method = "best_single_adjustment_set_change"
+        self.eccs = ECCS(data, true_graph)
+        self.eccs.set_treatment(self.treatment)
+        self.eccs.set_outcome(self.outcome)
+
+    def challenge(self) -> pd.DataFrame:
+        """
+        Invoke ECCS to produce a ranked list of edge changes that would most impact the ATE,
+        and return the most impactful ones up to the number of outputs specified in the
+        constructor.
+
+        Returns:
+            A dataframe containing the edge changes that would most impact the ATE.
+        """
+
+        # TODO: Bridge interpretation of the things ECCS returns to what this expects - 
+        # e.g. that the outputs of adjsetedit are a set to be considered all together. 
+        # Also, maybe provide support within Sawmill for fixed/banned etc. variables.
+
+        edits, ate, _ = self.eccs.suggest(method=self.method)
+        baseline_ate = ATECalculator.get_ate_and_confidence(
+            self.data, self.vars, self.treatment, self.outcome, graph=self.true_graph
+        )["ATE"]
+        ate_ratio = max(abs(ate / baseline_ate), abs(baseline_ate / ate))
+        graph_stats = []
+        for edit in edits:
+            d = {}
+            d["Source"] = edit.src
+            d["Source Tag"] = TagUtils.get_tag(self.vars, d["Source"], "prepared")
+            d["Target"] = edit.dst
+            d["Target Tag"] = TagUtils.get_tag(self.vars, d["Target"], "prepared")
+            d["Change"] = str(edit.edit_type)
+            d["ATE"] = ate
+            d["Baseline ATE"] = baseline_ate
+            d["ATE Ratio"] = ate_ratio
+
+            graph_stats.append(d.copy())
+
+        graphs_df = pd.DataFrame(graph_stats)
+        graphs_df.sort_values(by="ATE Ratio", ascending=False, inplace=True)
+
+        column_order = [
+            "Source",
+            "Source Tag",
+            "Target",
+            "Target Tag",
+            "Change",
+            "ATE",
+            "Baseline ATE",
+            "ATE Ratio",
+        ]
+
+        return graphs_df[column_order].head(self.num_outputs)
