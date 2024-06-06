@@ -30,6 +30,42 @@ import pickle
 import os
 from .pickler import Pickler
 from eccs.eccs import ECCS
+import enum
+
+
+class ATEChallengerMethod(str, enum.Enum):
+    STEP = "step"
+    CLUSTERING = "clustering"
+    ECCS_SINGLEEDIT = "eccs-singleedit"
+    ECCS_HEURISTICEEDIT = "eccs-heuristicedit"
+    ECCS_ADJSETEDIT = "eccs-adjsetedit"
+
+    @staticmethod
+    def from_str(method: str) -> "ATEChallengerMethod":
+        if method == "step":
+            return ATEChallengerMethod.STEP
+        elif method == "clustering":
+            return ATEChallengerMethod.CLUSTERING
+        elif method == "eccs-singleedit":
+            return ATEChallengerMethod.ECCS_SINGLEEDIT
+        elif method == "eccs-heuristicedit":
+            return ATEChallengerMethod.ECCS_HEURISTICEEDIT
+        elif method == "eccs-adjsetedit":
+            return ATEChallengerMethod.ECCS_ADJSETEDIT
+        else:
+            raise ValueError(f"Unrecognized method {method}")
+        
+    @staticmethod
+    def is_eccs_method(method: "ATEChallengerMethod") -> bool:
+        return method in [
+            ATEChallengerMethod.ECCS_SINGLEEDIT,
+            ATEChallengerMethod.ECCS_HEURISTICEEDIT,
+            ATEChallengerMethod.ECCS_ADJSETEDIT,
+        ]
+    
+    @staticmethod
+    def values() -> list[str]:
+        return [method.value for method in ATEChallengerMethod]
 
 
 class Pruner:
@@ -336,7 +372,7 @@ class ATECalculator:
         outcome: str,
         work_dir: str,
         num_outputs: int = 10,
-        method: str = "step",
+        method_str: str = "step",
         cp: Optional[ClusteringParams] = None,
     ) -> pd.DataFrame:
         """
@@ -352,30 +388,34 @@ class ATECalculator:
             outcome: The name or tag of the outcome variable.
             work_dir: The directory to store intermediate files in.
             num_outputs: The maximum number of candidate changes to output.
-            method: The method to use for ATE calculation. Can be one of: "step", "clustering", 
+            method_str: The method to use for ATE calculation. Can be one of: "step", "clustering",
                 "eccs-singleedit", "eccs-heuristicedit" or "eccs-adjsetedit".
             cp: The parameters to use for clustering. Only used if `method` is "clustering".
         Returns:
             A dataframe containing the edge changes that would most impact the ATE.
         """
 
-        if method == "step":
+        method = ATEChallengerMethod.from_str(
+            method_str
+        )  # This takes care of invalid inputs.
+
+
+        if method == ATEChallengerMethod.STEP:
             challenger = StepATEChallenger(
                 data, vars, true_graph, treatment, outcome, num_outputs
             )
             return challenger.challenge()
-        elif method == "clustering":
+        elif method == ATEChallengerMethod.CLUSTERING:
             cp = cp if cp is not None else ClusteringParams()
             challenger = ClusteringATEChallenger(
                 data, vars, true_graph, treatment, outcome, work_dir, num_outputs, cp
             )
             return challenger.challenge()
-        elif method.startswith("eccs"):
+        else:
             challenger = ECCSATEChallenger(
                 data, vars, true_graph, treatment, outcome, num_outputs, method
             )
-        else:
-            raise ValueError(f"Unknown method: {method}")
+            return challenger.challenge()
 
     @staticmethod
     def _is_acceptable(graph: nx.DiGraph, treatment: str, outcome: str) -> bool:
@@ -1159,7 +1199,7 @@ class ECCSATEChallenger:
         treatment: str,
         outcome: str,
         num_outputs: int = 10,
-        method: str = "eccs-adjsetedit",
+        method: ATEChallengerMethod = ATEChallengerMethod.ECCS_ADJSETEDIT,
     ) -> None:
         """
         Initializes an ECCSATEChallenger.
@@ -1171,10 +1211,13 @@ class ECCSATEChallenger:
             treatment: The name or tag of the treatment variable.
             outcome: The name or tag of the outcome variable.
             num_outputs: The maximum number of candidate changes to output.
-            method: The method to use for ATE calculation. Can be one of: "eccs-singleedit", "eccs-heuristicedit" or "eccs-adjsetedit".
+            method: The method to use for ATE calculation. Can be one of:
+                - ATEChallengerMethod.ECCS_SINGLEEDIT
+                - ATEChallengerMethod.ECCS_HEURISTICEEDIT
+                - ATEChallengerMethod.ECCS_ADJSETEDIT
         """
-        if method not in ["eccs-singleedit", "eccs-heuristicedit", "eccs-adjsetedit"]:
-            raise ValueError(f"Unknown method: {method}")
+        if not ATEChallengerMethod.is_eccs_method(method):
+            raise ValueError(f"Method {method} incorrectly passed to ECCSATEChallenger.")
 
         self.data = data
         self.vars = vars
@@ -1183,9 +1226,9 @@ class ECCSATEChallenger:
         self.outcome = TagUtils.name_of(self.vars, outcome, "prepared")
         self.num_outputs = num_outputs
 
-        if method == "eccs-singleedit":
+        if method == ATEChallengerMethod.ECCS_SINGLEEDIT:
             self.method = "best_single_edge_change"
-        elif method == "eccs-heuristicedit":
+        elif method == ATEChallengerMethod.ECCS_HEURISTICEEDIT:
             self.method = "astar_single_edge_change"
         else:
             self.method = "best_single_adjustment_set_change"
@@ -1203,9 +1246,11 @@ class ECCSATEChallenger:
             A dataframe containing the edge changes that would most impact the ATE.
         """
 
-        # TODO: Bridge interpretation of the things ECCS returns to what this expects - 
-        # e.g. that the outputs of adjsetedit are a set to be considered all together. 
+        # TODO: Bridge interpretation of the things ECCS returns to what this expects -
+        # e.g. that the outputs of adjsetedit are a set to be considered all together.
         # Also, maybe provide support within Sawmill for fixed/banned etc. variables.
+
+        # TODO: Think about extreme verbosity of eccs during the experiments
 
         edits, ate, _ = self.eccs.suggest(method=self.method)
         baseline_ate = ATECalculator.get_ate_and_confidence(

@@ -1,6 +1,7 @@
 from __future__ import annotations
 import streamlit as st
 from streamlit_extras.no_default_selectbox import selectbox
+from src.sawmill.ate import ATEChallengerMethod
 from src.sawmill.sawmill import Sawmill
 from src.sawmill.tag_utils import TagUtils
 from src.sawmill.variable_name.prepared_variable_name import PreparedVariableName
@@ -276,9 +277,11 @@ class SawmillUI:
                     label="Similarity Threshold",
                     min_value=0.0,
                     max_value=1.0,
-                    value=0.65
-                    if not st.session_state["file_choice"] == "Proprietary"
-                    else 0.9,
+                    value=(
+                        0.65
+                        if not st.session_state["file_choice"] == "Proprietary"
+                        else 0.9
+                    ),
                     help="The similarity threshold used by Drain. The default similarity threshold is `0.65`",
                 )
                 depth = st.number_input(
@@ -343,7 +346,6 @@ class SawmillUI:
             background_text = "Sawmill parsed the original log into a preliminary tabular representation, the *parsed table*, by separating the *parsed templates* from the *parsed variables* they contain. You can inspect each of these products here:"
             st.markdown(background_text)
 
-
             submitted_2 = st.form_submit_button(
                 label="Show Parsed Templates", on_click=on_click
             )
@@ -358,7 +360,6 @@ class SawmillUI:
                 df3 = self.sawmill.parsed_variables.copy().astype(str)
                 st.dataframe(df3)
 
-
             submitted_1 = st.form_submit_button(
                 label="Show Parsed Table", on_click=on_click
             )
@@ -366,7 +367,6 @@ class SawmillUI:
                 df1 = self.sawmill.parsed_log.copy().astype(str)
                 st.dataframe(df1)
 
-            
     def separate(self):
         """
         Separate log variables that have erroneously been mapped to the same parsed variable.
@@ -377,7 +377,7 @@ class SawmillUI:
 
         with st.form("separate_form"):
             st.subheader("Correct Parsing")
-            background_text = "If a part of the template has been erroneously recognized as a variable, you can correcti it here."
+            background_text = "If a part of the template has been erroneously recognized as a variable, you can correct it here."
             st.markdown(background_text)
 
             to_separate = selectbox(
@@ -820,6 +820,18 @@ class SawmillUI:
         # The user can then click a button to accept the selected values
         # The user can also click a button to reject the selected values
 
+        def on_click_call_eccs():
+            # TODO: only enable this after he user has set the treatment and the outcome
+            impactful_edits = self.sawmill.challenge_ate(
+                st.session_state["ate_treatment"],
+                st.session_state["ate_outcome"],
+                method=st.session_state["impact_method"],
+            )
+
+            st.session_state["impactful_edits"] = impactful_edits
+
+            self.clear_next(["impact_method"])
+
         with st.form("decide_edge_form"):
             st.subheader(
                 "Choose the endpoints of the edge you would like to decide on:"
@@ -855,3 +867,19 @@ class SawmillUI:
                 "Reject Undecided Incoming to Destination",
                 on_click=on_click_reject_undecided_incoming,
             )
+            impact_col_1, impact_col_2 = st.columns([0.6, 0.4])
+            with impact_col_1:
+                st.form_submit_button(
+                    "Find most impactful edge edit(s)",
+                    on_click=on_click_call_eccs,
+                )
+            with impact_col_2:
+                selected_destination = st.selectbox(
+                    "Method:",
+                    ATEChallengerMethod.values(),
+                    format_func=lambda x: str(x),
+                    key="impact_method",
+                )
+
+            if "impactful_edits" in st.session_state:
+                st.write(st.session_state["impactful_edits"])
